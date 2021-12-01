@@ -1,10 +1,7 @@
-package week1
-
 import scala.io.Source
 import scala.util.Using
-import scala.language.postfixOps
 
-object Day1 extends App {
+object Day01 extends App {
 
   def readLinesFromResource(resourceName: String): List[Int] =
     Using(Source.fromResource(resourceName))(
@@ -25,5 +22,5 @@ object Day1 extends App {
       })
 
   println("Task 1 solution:")
-  println(countIncreases(readLinesFromResource("Day1.input.txt")))
+  println(countIncreases(readLinesFromResource("Day01.input.txt")))
 }
